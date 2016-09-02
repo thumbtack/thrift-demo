@@ -1,3 +1,4 @@
+.PHONY: all
 all:
 	thrift --gen go service.thrift
 	# only required if php will implement server, otherwise you can run:
