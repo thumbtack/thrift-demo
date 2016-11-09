@@ -51,7 +51,7 @@ func main() {
 	processor := demo.NewDemoServiceProcessor(service)
 
 	// select binary protocol
-	binaryF := thrift.NewTBinaryProtocolFactoryDefault()
+	binaryF := thrift.NewTBinaryProtocolFactory(true, true)
 
 	// http will route all requests to / to Thrift handler function which needs processor and binary
 	// thrift factory
